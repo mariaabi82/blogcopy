@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
+nav{
+    background-color: rgb(136, 6, 136);
+    height: 75px;
+    font-family: 'Gayathri', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div{
+    margin: 20px;
+}
+
+nav img {
+    display: none;
+    width: 75px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    
+}
+
+.menu div:hover{
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .menu{
+        display: none;
+    }
+    nav img {
+        display: block;
+    }
+    nav{
+        justify-content: flex-end;
+    }
+}
+
+
+body{
+    margin: 0;
+    background-color: lightgrey;
+    font-family: "Raleway", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main {
+    
+    display: flex;
+
+}
+
+@media (max-width:600px) {
+    .main {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .aside {
+        flex-direction: column;
+        flex: flex-end;
+    }
+}
+
+
+.section {
+    width: 70%;
+}
+
+.aside {
+    width: 30%;
+}
+
+.card {
+    border: 1px solid lightgray;
+    margin: 16px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,5);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    padding: 15px;
+    background-color: white;
+}
